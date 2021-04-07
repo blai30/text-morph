@@ -1,0 +1,25 @@
+<textarea
+  name="inputText"
+  rows="4"
+  placeholder="Input"
+  [(ngModel)]="inputText"
+  class="w-full block autoexpand tracking-wide px-4 py-2 leading-relaxed appearance-none border border-gray-200 rounded focus:outline-none focus:border-gray-500"
+>
+</textarea>
+
+<textarea
+  name="outputText"
+  rows="4"
+  placeholder="Output"
+  [(ngModel)]="outputText"
+  class="w-full block autoexpand tracking-wide px-4 py-2 leading-relaxed appearance-none border border-gray-200 rounded focus:outline-none focus:border-gray-500"
+>
+</textarea>
+
+<button
+  type="button"
+  (click)="morphText()"
+  class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700"
+>
+  Morph
+</button>

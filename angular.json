@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "text-morph"
+  "defaultProject": "text-morph",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
