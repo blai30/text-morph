@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-layout-sidebar',
@@ -6,11 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
+  open = false;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
