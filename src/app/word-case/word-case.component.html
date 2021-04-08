@@ -8,23 +8,23 @@
   >
   </textarea>
 
-  <div class="block">
+  <form class="block">
     <label class="inline-flex items-center" *ngFor="let caseTypes of caseTypes">
-      <input type="radio" class="border-gray-300 shadow-sm" name="caseType" value="{{caseTypes.value}}">
+      <input type="radio" class="border-gray-300 shadow-sm" name="caseType" [value]="caseTypes.value" [(ngModel)]="selectedCaseType">
       <span class="ml-2">{{caseTypes.label}}</span>
     </label>
-  </div>
+  </form>
 
   <div class="block">
     <label class="inline-flex items-center">
-      <input type="checkbox" class="rounded border-gray-300 shadow-sm">
+      <input type="checkbox" class="rounded border-gray-300 shadow-sm" [(ngModel)]="trimWhitespace">
       <span class="ml-2">Trim whitespace</span>
     </label>
   </div>
 
   <div class="block">
     <label class="inline-flex items-center">
-      <input type="checkbox" class="rounded border-gray-300 shadow-sm">
+      <input type="checkbox" class="rounded border-gray-300 shadow-sm" [(ngModel)]="clapItUp">
       <span class="ml-2">Clap 👏 it 👏 up!</span>
     </label>
   </div>
