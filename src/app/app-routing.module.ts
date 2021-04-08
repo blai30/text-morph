@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SelectivePreloadingStrategyService } from "./services";
 import { NotFoundComponent } from "./not-found";
 import { WordCaseComponent } from "./word-case";
+import { NumbersComponent } from "./numbers";
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'wordcase',
     component: WordCaseComponent,
+  },
+  {
+    path: 'numbers',
+    component: NumbersComponent,
   },
   // Must be last to catch all invalid routes.
   {
