@@ -9,9 +9,9 @@
   </textarea>
 
   <form class="block">
-    <label class="inline-flex items-center" *ngFor="let caseTypes of caseTypes">
-      <input type="radio" class="border-gray-300 shadow-sm" name="caseType" [value]="caseTypes.value" [(ngModel)]="selectedCaseType">
-      <span class="ml-2">{{caseTypes.label}}</span>
+    <label class="inline-flex items-center" *ngFor="let textCase of textCases">
+      <input type="radio" class="border-gray-300 shadow-sm" name="caseType" [value]="textCase" [(ngModel)]="selectedCaseType">
+      <span class="ml-2">{{textCase}}</span>
     </label>
   </form>
 
@@ -26,6 +26,13 @@
     <label class="inline-flex items-center">
       <input type="checkbox" class="rounded border-gray-300 shadow-sm" [(ngModel)]="clapItUp">
       <span class="ml-2">Clap 👏 it 👏 up!</span>
+    </label>
+  </div>
+
+  <div class="block">
+    <label class="inline-flex items-center">
+      <input type="number" class="rounded border-gray-300 shadow-sm" [(ngModel)]="charLimit">
+      <span class="ml-2">Character limit</span>
     </label>
   </div>
 
