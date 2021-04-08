@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SelectivePreloadingStrategyService } from "./services";
-import { PageNotFoundComponent } from "./page-not-found";
+import { NotFoundComponent } from "./not-found";
 import { WordCaseComponent } from "./word-case";
 
 const routes: Routes = [
@@ -11,12 +11,13 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: '**',
-    component: PageNotFoundComponent,
-  },
-  {
     path: 'wordcase',
     component: WordCaseComponent,
+  },
+  // Must be last to catch all invalid routes.
+  {
+    path: '**',
+    component: NotFoundComponent,
   },
 ];
 
@@ -25,7 +26,6 @@ const routes: Routes = [
     RouterModule.forRoot(
       routes,
       {
-        enableTracing: false,
         preloadingStrategy: SelectivePreloadingStrategyService,
       })
   ],

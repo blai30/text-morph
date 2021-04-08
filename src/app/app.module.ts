@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared';
-import { PageNotFoundComponent } from './page-not-found';
+import { NotFoundComponent } from './not-found';
 import { WordCaseModule } from "./word-case/word-case.module";
 
 @NgModule({
@@ -21,7 +21,7 @@ import { WordCaseModule } from "./word-case/word-case.module";
   ],
   declarations: [
     AppComponent,
-    PageNotFoundComponent,
+    NotFoundComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

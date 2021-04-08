@@ -19,7 +19,7 @@ import { FooterComponent, HeaderComponent, SidebarComponent } from "./layout";
     FooterComponent,
     HeaderComponent,
     SidebarComponent,
-  ]
+  ],
 })
 export class SharedModule {
 }

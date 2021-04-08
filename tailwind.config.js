@@ -1,6 +1,7 @@
 module.exports = {
+  mode: 'jit',
   purge: [
-    './src/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{js,jsx,ts,tsx,vue,html}',
     './src/index.html',
   ],
   darkMode: 'class', // or 'media' or 'class'
@@ -11,9 +12,20 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: [
+        'disabled',
+      ],
+      cursor: [
+        'disabled',
+      ],
+      opacity: [
+        'disabled',
+      ],
+    },
   },
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
   ],

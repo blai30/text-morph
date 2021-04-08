@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { CaseType, TextCase, WordCaseService } from "../services/word-case.service";
 
 @Component({
   selector: 'app-home',
@@ -8,15 +8,18 @@ import { Router } from "@angular/router";
 export class WordCaseComponent implements OnInit {
   inputText = '';
   outputText = '';
+  selectedCaseType: TextCase = TextCase.Unchanged;
+  caseTypes: CaseType[] = [];
 
   constructor(
-    private router: Router
+    private wordCaseService: WordCaseService,
   ) {}
 
   ngOnInit(): void {
+    this.caseTypes = this.wordCaseService.getCaseTypes();
   }
 
-  morphText(): void {
+  transformText(): void {
     this.outputText = this.inputText.toUpperCase();
   }
 }
