@@ -1,5 +1,7 @@
 module.exports = {
   // mode: 'jit',
+  // NODE_ENV set to 'production' to purge.
+  // Don't purge during development for PostCSS faster reloads.
   purge: [
     './src/**/*.{js,jsx,ts,tsx,vue,html}',
     './src/index.html',
