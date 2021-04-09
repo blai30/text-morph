@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as _ from 'lodash';
 import { TextCase, WordCaseService } from "../services/word-case.service";
 
 @Component({
@@ -46,20 +47,26 @@ export class WordCaseComponent implements OnInit {
         text = text.toLowerCase();
         break;
       case TextCase.SentenceCase:
+        text = _.capitalize(text);
         break;
       case TextCase.TitleCase:
+        text = _.startCase(_.toLower(text));
         break;
       case TextCase.CamelCase:
-        text = this.toCamelCase(text);
+        text = _.camelCase(text);
         break;
       case TextCase.PascalCase:
-        text = this.toPascalCase(text);
+        text = _.camelCase(text);
+        text = _.upperFirst(text);
         break;
       case TextCase.SnakeCase:
+        text = _.snakeCase(text);
         break;
       case TextCase.KebabCase:
+        text = _.kebabCase(text);
         break;
       case TextCase.RandomCase:
+        text = this.randomCase(text);
         break;
       case TextCase.Unchanged:
       default:
@@ -77,21 +84,17 @@ export class WordCaseComponent implements OnInit {
     this.outputText = text;
   }
 
-  toCamelCase(input: string): string {
-    let word = this.toPascalCase(input);
-    return word.length > 0 ? word.substring(0, 1).toLowerCase() + word.substring(1) : word;
-  }
+  randomCase(text: string): string {
+    let result = '';
 
-  toPascalCase(input: string): string {
-    return input.replace(/(?:^|_|-| +)(.)/g, (match, capture) => capture.toUpperCase());
-  }
+    do {
+      const chars = [...text];
+      for (const c of chars) {
+        const next = Math.floor(Math.random() * 2);
+        result += next === 0 ? c.toUpperCase() : c.toLowerCase();
+      }
+    } while (result == text);
 
-  toSentenceCase(input: string): string {
-    let word = this.toTitleCase(input);
-    return word.length > 0 ? word.substring(0, 1).toLowerCase() + word.substring(1) : word;
-  }
-
-  toTitleCase(input: string): string {
-    return input.replace(/(?:^|_|-+)(.)/g, (match, capture) => capture.toUpperCase());
+    return result;
   }
 }
