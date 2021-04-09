@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { FooterComponent, HeaderComponent, SidebarComponent } from "./layout";
+import { DarkToggleComponent, FooterComponent, HeaderComponent, SidebarComponent } from "./layout";
 
 @NgModule({
   imports: [
@@ -11,11 +11,13 @@ import { FooterComponent, HeaderComponent, SidebarComponent } from "./layout";
     RouterModule,
   ],
   declarations: [
+    DarkToggleComponent,
     FooterComponent,
     HeaderComponent,
     SidebarComponent,
   ],
   exports: [
+    DarkToggleComponent,
     FooterComponent,
     HeaderComponent,
     SidebarComponent,

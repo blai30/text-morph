@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'jit',
+  // mode: 'jit',
   purge: [
     './src/**/*.{js,jsx,ts,tsx,vue,html}',
     './src/index.html',
@@ -14,14 +14,21 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: [
+        'dark',
         'disabled',
       ],
       cursor: [
+        'dark',
         'disabled',
       ],
       opacity: [
+        'dark',
         'disabled',
       ],
+      textOpacity: [
+        'dark',
+        'disabled',
+      ]
     },
   },
   plugins: [
