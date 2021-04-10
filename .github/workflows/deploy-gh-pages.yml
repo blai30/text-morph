@@ -18,12 +18,9 @@ jobs:
 
       - name: Install npm packages and build
         run: |
+          npm install -g @angular/cli
           npm install
-          npm run build:prod
-
-      # Change the base-tag in index.html from '/' to '/app-name' to match GitHub Pages repository subdirectory.
-      - name: Change base-tag in index.html
-        run: sed -i 's/<base href="\/" \/>/<base href="\/text-morph\/" \/>/g' dist/text-morph/index.html
+          cross-env NODE_ENV=production ng build --prod --base-href="/text-morph/"
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
