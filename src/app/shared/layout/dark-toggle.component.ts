@@ -6,7 +6,6 @@ import { ThemeService } from "../../services/theme.service";
   templateUrl: './dark-toggle.component.html',
 })
 export class DarkToggleComponent implements OnInit {
-
   constructor(
     private themeService: ThemeService,
   ) { }
@@ -16,5 +15,9 @@ export class DarkToggleComponent implements OnInit {
 
   onDarkToggle(): void {
     this.themeService.toggleTheme();
+  }
+
+  isDark() {
+    return this.themeService.isDark;
   }
 }
