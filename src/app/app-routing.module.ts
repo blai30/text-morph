@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SelectivePreloadingStrategyService } from "./services";
-import { NotFoundComponent } from "./not-found";
-import { WordCaseComponent } from "./word-case";
-import { NumbersComponent } from "./numbers";
+import { SelectivePreloadingStrategyService } from './services';
+import { NotFoundComponent } from './not-found';
+import { AboutComponent } from './about';
+import { WordCaseComponent } from './word-case';
+import { NumbersComponent } from './numbers';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: '/wordcase',
     pathMatch: 'full',
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
   },
   {
     path: 'wordcase',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as voca from 'voca';
-import { TextCase, WordCaseService } from "../services/word-case.service";
+import { TextCase, WordCaseService } from '../services/word-case.service';
 
 @Component({
   selector: 'app-home',
