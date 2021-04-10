@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   // mode: 'jit',
   // NODE_ENV set to 'production' to purge.
@@ -8,7 +11,29 @@ module.exports = {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.blueGray,
+      red: colors.red,
+      yellow: colors.amber,
+      green: colors.emerald,
+      blue: colors.lightBlue,
+      indigo: colors.indigo,
+      purple: colors.violet,
+      pink: colors.rose,
+    },
+    extend: {
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        serif: ['Source Serif Pro', ...defaultTheme.fontFamily.serif],
+        mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
+        display: ['Assistant'],
+        body: ['Open Sans'],
+      },
+    },
   },
   variants: {
     extend: {
@@ -27,7 +52,7 @@ module.exports = {
       textOpacity: [
         'dark',
         'disabled',
-      ]
+      ],
     },
   },
   plugins: [

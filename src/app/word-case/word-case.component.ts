@@ -35,8 +35,7 @@ export class WordCaseComponent implements OnInit {
       text = text.trim();
 
       // Shrink excess spaces between words.
-      let regex = /\s+/g;
-      text = text.replace(regex, ' ');
+      text = text.replace(/\s+/g, ' ');
     }
 
     switch (this.selectedCaseType) {
@@ -74,10 +73,10 @@ export class WordCaseComponent implements OnInit {
     }
 
     if (this.clapItUp) {
-      text = text.replace(' ', ' 👏 ');
+      text = text.replace(/ /g, ' 👏 ');
     }
 
-    if (this.charLimit != null) {
+    if (this.charLimit) {
       text = text.slice(0, this.charLimit);
     }
 

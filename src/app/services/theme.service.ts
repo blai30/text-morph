@@ -15,8 +15,6 @@ export class ThemeService {
       document.documentElement.classList.remove('dark');
       this.isDark = false;
     }
-
-    localStorage.theme = this.isDark ? 'dark' : 'light';
   }
 
   toggleTheme(): void {
