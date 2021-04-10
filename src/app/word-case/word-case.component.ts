@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as _ from 'lodash-es';
+import * as voca from 'voca';
 import { TextCase, WordCaseService } from "../services/word-case.service";
 
 @Component({
@@ -47,23 +47,23 @@ export class WordCaseComponent implements OnInit {
         text = text.toLowerCase();
         break;
       case TextCase.SentenceCase:
-        text = _.capitalize(text);
+        text = voca.capitalize(text, true);
         break;
       case TextCase.TitleCase:
-        text = _.startCase(_.toLower(text));
+        text = voca.titleCase(text);
         break;
       case TextCase.CamelCase:
-        text = _.camelCase(text);
+        text = voca.camelCase(text);
         break;
       case TextCase.PascalCase:
-        text = _.camelCase(text);
-        text = _.upperFirst(text);
+        text = voca.camelCase(text);
+        text = voca.capitalize(text);
         break;
       case TextCase.SnakeCase:
-        text = _.snakeCase(text);
+        text = voca.snakeCase(text);
         break;
       case TextCase.KebabCase:
-        text = _.kebabCase(text);
+        text = voca.kebabCase(text);
         break;
       case TextCase.RandomCase:
         text = this.randomCase(text);
