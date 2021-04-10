@@ -27,7 +27,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
         serif: ['Source Serif Pro', ...defaultTheme.fontFamily.serif],
         mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
         display: ['Assistant'],

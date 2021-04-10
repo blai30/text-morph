@@ -9,16 +9,16 @@
             rows="4"
             placeholder="Text to transform"
             [(ngModel)]="inputText"
-            class="form-textarea w-full mt-1 rounded-md transition duration-100 ease-in-out dark:placeholder-gray-300 border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+            class="form-textarea w-full mt-1 rounded-md transition duration-100 ease-in-out dark:placeholder-gray-300 border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
           ></textarea>
         </label>
       </div>
 
       <div class="block w-full">
-        <label class="inline-flex items-center dark:text-white" *ngFor="let textCase of textCases">
+        <label class="cursor-pointer inline-flex items-center dark:text-white" *ngFor="let textCase of textCases">
           <input
             type="radio"
-            class="form-radio w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+            class="form-radio w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
             name="caseType"
             [value]="textCase"
             [(ngModel)]="selectedCaseType"
@@ -28,10 +28,10 @@
       </div>
 
       <div class="block w-full">
-        <label class="inline-flex items-center dark:text-white">
+        <label class="cursor-pointer inline-flex items-center dark:text-white">
           <input
             type="checkbox"
-            class="form-checkbox w-8 h-8 rounded transition duration-100 ease-in-out border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+            class="form-checkbox w-8 h-8 rounded transition duration-100 ease-in-out border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
             [(ngModel)]="trimWhitespace"
           >
           <span class="ml-2">Trim whitespace</span>
@@ -39,10 +39,10 @@
       </div>
 
       <div class="block w-full">
-        <label class="inline-flex items-center dark:text-white">
+        <label class="cursor-pointer inline-flex items-center dark:text-white">
           <input
             type="checkbox"
-            class="form-checkbox w-8 h-8 rounded transition duration-100 ease-in-out border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+            class="form-checkbox w-8 h-8 rounded transition duration-100 ease-in-out border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
             [(ngModel)]="clapItUp"
           >
           <span class="ml-2">Clap 👏 it 👏 up!</span>
@@ -54,7 +54,7 @@
           <input
             type="number"
             placeholder="No limit"
-            class="form-input rounded transition duration-100 ease-in-out dark:placeholder-gray-300 border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+            class="form-input rounded transition duration-100 ease-in-out dark:placeholder-gray-300 border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
             min="0"
             [(ngModel)]="charLimit"
           >
@@ -66,7 +66,7 @@
         <button
           type="button"
           (click)="transformText()"
-          class="w-full h-12 font-semibold rounded-lg text-white bg-green-500 hover:bg-green-700 disabled:bg-green-500 disabled:opacity-50"
+          class="w-full h-12 font-semibold rounded-lg text-white bg-green-500 hover:bg-green-700 disabled:bg-green-500 disabled:opacity-50 focus:outline-none"
           [ngClass]="{'cursor-not-allowed': !inputText}"
           [disabled]="!inputText"
         >
@@ -82,7 +82,7 @@
             rows="4"
             placeholder="Result"
             [(ngModel)]="outputText"
-            class="form-textarea w-full mt-1 rounded-md transition duration-100 ease-in-out dark:placeholder-gray-300 border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+            class="form-textarea w-full mt-1 rounded-md transition duration-100 ease-in-out dark:placeholder-gray-300 border-gray-300 dark:border-gray-900 dark:bg-gray-600 dark:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
           ></textarea>
         </label>
       </div>
