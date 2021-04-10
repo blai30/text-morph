@@ -20,7 +20,7 @@ jobs:
         run: |
           npm install -g @angular/cli
           npm install
-          cross-env NODE_ENV=production ng build --prod --base-href="/text-morph/"
+          npm run build:prod
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
