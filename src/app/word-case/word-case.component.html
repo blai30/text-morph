@@ -14,15 +14,17 @@
     </div>
 
     <div class="block w-full">
-      <label class="cursor-pointer inline-flex items-center dark:text-white" *ngFor="let textCase of textCases">
-        <input
-          type="radio"
-          class="form-radio cursor-pointer w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
-          [value]="textCase"
-          [(ngModel)]="selectedCaseType"
-        >
-        <span class="ml-2">{{textCase}}</span>
-      </label>
+      <div>
+        <label class="cursor-pointer inline-flex items-center dark:text-white" *ngFor="let textCase of textCases">
+          <input
+            type="radio"
+            class="form-radio cursor-pointer btn w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+            [value]="textCase"
+            [(ngModel)]="selectedCaseType"
+          >
+          <span class="ml-2">{{textCase}}</span>
+        </label>
+      </div>
     </div>
 
     <div class="block w-full">
