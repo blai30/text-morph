@@ -13,11 +13,15 @@ export class DarkToggleComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onDarkToggle(): void {
-    this.themeService.toggleTheme();
+  getCurrentTheme(): string {
+    return this.themeService.getCurrentTheme();
   }
 
-  isDark() {
-    return this.themeService.isDark;
+  onToggleDark(enabled: boolean): void {
+    this.themeService.toggleTheme(enabled);
+  }
+
+  resetTheme(): void {
+    this.themeService.resetTheme();
   }
 }
