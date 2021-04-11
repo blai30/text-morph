@@ -23,6 +23,19 @@ export class WordCaseComponent implements OnInit {
     this.textCases = this.wordCaseService.getTextCases();
   }
 
+  isClappable(): boolean {
+    switch (this.selectedCaseType) {
+      case TextCase.CamelCase:
+      case TextCase.PascalCase:
+      case TextCase.SnakeCase:
+      case TextCase.KebabCase:
+        this.clapItUp = false;
+        return false;
+      default:
+        return true;
+    }
+  }
+
   transformText(): void {
     if (!this.inputText) {
       return;
@@ -31,11 +44,8 @@ export class WordCaseComponent implements OnInit {
     let text = this.inputText;
 
     if (this.trimWhitespace) {
-      // Trim trailing whitespace.
-      text = text.trim();
-
-      // Shrink excess spaces between words.
-      text = text.replace(/\s+/g, ' ');
+      // Trim trailing whitespace and shrink excess whitespace between words.
+      text = text.trim().replace(/\s+/g, ' ');
     }
 
     switch (this.selectedCaseType) {
