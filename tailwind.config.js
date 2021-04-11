@@ -26,6 +26,9 @@ module.exports = {
       pink: colors.rose,
     },
     extend: {
+      zIndex: {
+        '-10': '-10',
+      },
       fontFamily: {
         sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
         serif: ['Source Serif Pro', ...defaultTheme.fontFamily.serif],

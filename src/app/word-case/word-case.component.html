@@ -17,16 +17,18 @@
       <div class="inline-flex">
         <div>
           <label
-            class="cursor-pointer px-4 py-2 inline-block transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none"
+            class="cursor-pointer px-4 py-2 inline-flex justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none"
             *ngFor="let textCase of textCases"
             [ngClass]="{'bg-indigo-400 dark:bg-indigo-500 text-white': textCase === selectedCaseType, 'hover:bg-gray-100 dark:hover:bg-gray-600': textCase !== selectedCaseType}"
           >
-            <input
-              type="radio"
-              class="form-radio w-0 h-0 opacity-0 pointer-events-none"
-              [value]="textCase"
-              [(ngModel)]="selectedCaseType"
-            >
+            <span class="absolute top-0 left-0 -z-10 w-full h-full">
+              <input
+                type="radio"
+                class="form-radio w-0 h-0 opacity-0 pointer-events-none"
+                [value]="textCase"
+                [(ngModel)]="selectedCaseType"
+              >
+            </span>
             <span>{{textCase}}</span>
           </label>
         </div>
