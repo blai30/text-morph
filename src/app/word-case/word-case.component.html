@@ -15,19 +15,19 @@
 
     <div class="block w-full">
       <div class="inline-flex">
-        <div class="grid grid-cols-2 lg:grid-cols-5 border border-gray-300 dark:border-gray-600 divide-x divide-y divide-gray-300 dark:divide-gray-600">
+        <div class="hborder border-gray-300 dark:border-gray-600 divide-x divide-y divide-gray-300 dark:divide-gray-600">
           <label
-            class="cursor-pointer px-4 py-2 transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none"
+            class="cursor-pointer px-4 py-2 inline-block transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 focus:outline-none"
             *ngFor="let textCase of textCases"
             [ngClass]="{'bg-indigo-400 dark:bg-indigo-500 text-white': textCase === selectedCaseType, 'hover:bg-gray-100 dark:hover:bg-gray-600': textCase !== selectedCaseType}"
           >
             <input
               type="radio"
-              class="form-radio cursor-pointer hidden"
+              class="form-radio w-0 h-0 opacity-0 pointer-events-none"
               [value]="textCase"
               [(ngModel)]="selectedCaseType"
             >
-            {{textCase}}
+            <span>{{textCase}}</span>
           </label>
         </div>
       </div>
