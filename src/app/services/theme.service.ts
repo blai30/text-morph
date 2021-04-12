@@ -6,13 +6,20 @@ import { Injectable } from '@angular/core';
 export class ThemeService {
   constructor() {
     this.initTheme();
+    // Watch for change in system theme preference.
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      if (e.matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    });
   }
 
   getCurrentTheme(): string {
     if ('theme' in localStorage) {
       return localStorage.theme;
     }
-
     return 'system';
   }
 
