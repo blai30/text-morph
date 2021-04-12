@@ -1,6 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import * as voca from 'voca';
-import { TextCase, WordCaseService } from '../services/word-case.service';
+
+export enum TextCase {
+  Unchanged  = 'Unchanged',
+  UpperCase = 'UPPER CASE',
+  LowerCase = 'lower case',
+  SentenceCase = 'Sentence case',
+  TitleCase = 'Title Case',
+  CamelCase = 'camelCase',
+  PascalCase = 'PascalCase',
+  SnakeCase = 'snake_case',
+  KebabCase = 'kebab-case',
+  RandomCase = 'rAnDOm caSe',
+}
 
 @Component({
   selector: 'app-home',
@@ -15,12 +27,10 @@ export class WordCaseComponent implements OnInit {
   clapItUp = false;
   charLimit? = null;
 
-  constructor(
-    private wordCaseService: WordCaseService,
-  ) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.textCases = this.wordCaseService.getTextCases();
+    this.textCases = Object.values(TextCase);
   }
 
   isClappable(): boolean {
@@ -36,7 +46,7 @@ export class WordCaseComponent implements OnInit {
     }
   }
 
-  transformText(): void {
+  onTransform(): void {
     if (!this.inputText) {
       return;
     }
@@ -65,8 +75,7 @@ export class WordCaseComponent implements OnInit {
         text = voca.camelCase(text);
         break;
       case TextCase.PascalCase:
-        text = voca.camelCase(text);
-        text = voca.capitalize(text);
+        text = voca.capitalize(voca.camelCase(text));
         break;
       case TextCase.SnakeCase:
         text = voca.snakeCase(text);

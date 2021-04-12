@@ -1,5 +1,63 @@
 <div class="container mx-auto px-6 py-4">
-  <article class="prose prose-lg prose-indigo max-w-none dark:prose-dark">
-    <h1>Nothing here yet</h1>
-  </article>
+  <div class="space-y-6">
+    <div class="block w-full">
+      <label class="dark:text-white">
+        <span>Input text</span>
+        <input
+          type="number"
+          name="inputText"
+          placeholder="Number to transform"
+          [(ngModel)]="inputText"
+          class="form-textarea w-full mt-2 transition duration-100 ease-in-out dark:bg-gray-700 dark:placeholder-gray-300 border-gray-300 dark:border-gray-600 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+        >
+      </label>
+    </div>
+
+    <div class="block w-full">
+      <div class="inline-flex">
+        <div class="grid grid-cols-2 lg:grid-cols-3">
+          <label
+            class="cursor-pointer px-4 py-2 block text-center justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none"
+            *ngFor="let wordMode of wordModes"
+            [ngClass]="{'bg-indigo-400 dark:bg-indigo-500 text-white': wordMode === selectedWordMode, 'hover:bg-gray-100 dark:hover:bg-gray-600': wordMode !== selectedWordMode}"
+          >
+            <span class="absolute top-0 left-0 -z-10 w-full h-full">
+              <input
+                type="radio"
+                class="form-radio w-0 h-0 opacity-0 pointer-events-none"
+                [value]="wordMode"
+                [(ngModel)]="selectedWordMode"
+              >
+            </span>
+            <span>{{wordMode}}</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="block w-full">
+      <button
+        type="button"
+        (click)="onTransform()"
+        class="w-full h-12 font-semibold text-white bg-green-500 hover:bg-green-700 disabled:bg-green-500 disabled:opacity-50 focus:outline-none"
+        [ngClass]="{'cursor-not-allowed': !inputText && inputText !== 0}"
+        [disabled]="!inputText && inputText !== 0"
+      >
+        Transform
+      </button>
+    </div>
+
+    <div class="block w-full">
+      <label class="dark:text-white">
+        <span>Output text</span>
+        <textarea
+          name="outputText"
+          rows="4"
+          placeholder="Result"
+          [(ngModel)]="outputText"
+          class="form-textarea w-full mt-2 transition duration-100 ease-in-out dark:bg-gray-700 dark:placeholder-gray-300 border-gray-300 dark:border-gray-600 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+        ></textarea>
+      </label>
+    </div>
+  </div>
 </div>

@@ -78,7 +78,7 @@
     <div class="block w-full">
       <button
         type="button"
-        (click)="transformText()"
+        (click)="onTransform()"
         class="w-full h-12 font-semibold text-white bg-green-500 hover:bg-green-700 disabled:bg-green-500 disabled:opacity-50 focus:outline-none"
         [ngClass]="{'cursor-not-allowed': !inputText}"
         [disabled]="!inputText"
