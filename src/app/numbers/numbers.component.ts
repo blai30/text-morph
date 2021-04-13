@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as converter from 'number-to-words';
+import millify from 'millify';
 
 export enum WordMode {
   Unchanged  = 'Unchanged',
@@ -51,6 +52,7 @@ export class NumbersComponent implements OnInit {
         text = this.toRoman(this.inputText);
         break;
       case WordMode.Metrics:
+        text = millify(this.inputText);
         break;
       case WordMode.Unchanged:
       default:
