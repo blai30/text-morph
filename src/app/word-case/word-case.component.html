@@ -17,7 +17,7 @@
       <div class="inline-flex">
         <div class="grid grid-cols-2 lg:grid-cols-5">
           <label
-            class="cursor-pointer px-4 py-2 block text-center justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none"
+            class="cursor-pointer select-none px-4 py-2 block text-center justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none"
             *ngFor="let textCase of textCases"
             [ngClass]="{'bg-indigo-400 dark:bg-indigo-500 text-white': textCase === selectedCaseType, 'hover:bg-gray-100 dark:hover:bg-gray-600': textCase !== selectedCaseType}"
           >
@@ -79,7 +79,7 @@
       <button
         type="button"
         (click)="onTransform()"
-        class="w-full h-12 font-semibold text-white bg-green-500 hover:bg-green-700 disabled:bg-green-500 disabled:opacity-50 focus:outline-none"
+        class="w-full h-12 transition duration-100 ease-in-out font-semibold text-white bg-green-500 hover:bg-green-700 disabled:bg-green-500 disabled:opacity-50 focus:outline-none"
         [ngClass]="{'cursor-not-allowed': !inputText}"
         [disabled]="!inputText"
       >
@@ -95,6 +95,7 @@
           rows="4"
           placeholder="Result"
           [(ngModel)]="outputText"
+          onclick="this.focus();this.select()"
           class="form-textarea w-full mt-2 transition duration-100 ease-in-out dark:bg-gray-700 dark:placeholder-gray-300 border-gray-300 dark:border-gray-600 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
         ></textarea>
       </label>
