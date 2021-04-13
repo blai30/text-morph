@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SelectivePreloadingStrategyService } from './services';
-import { NotFoundComponent } from './not-found';
-import { AboutComponent } from './about';
-import { WordCaseComponent } from './word-case';
-import { NumbersComponent } from './numbers';
+import { NotFoundComponent } from './pages/not-found';
+import { AboutComponent } from './pages/about';
+import { WordCaseComponent } from './pages/word-case';
+import { NumbersComponent } from './pages/numbers';
 
 const routes: Routes = [
   {
