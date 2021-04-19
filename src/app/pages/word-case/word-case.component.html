@@ -39,7 +39,7 @@
       <label class="cursor-pointer inline-flex items-center dark:text-white">
         <input
           type="checkbox"
-          class="form-checkbox w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+          class="form-checkbox cursor-pointer w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
           [(ngModel)]="trimWhitespace"
         >
         <span class="ml-4">Trim whitespace</span>
@@ -53,7 +53,7 @@
       >
         <input
           type="checkbox"
-          class="form-checkbox w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
+          class="form-checkbox cursor-pointer w-8 h-8 transition duration-100 ease-in-out border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:bg-gray-100 hover:bg-gray-100 dark:focus:bg-gray-600 dark:hover:bg-gray-600 focus:outline-none focus:ring focus:ring-offset-0 focus:ring-indigo-500"
           [(ngModel)]="clapItUp"
           [ngClass]="{'cursor-not-allowed': !isClappable()}"
           [disabled]="!isClappable()"
