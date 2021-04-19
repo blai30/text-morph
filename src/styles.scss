@@ -6,16 +6,16 @@
 @layer base {
   @font-face {
     font-family: JetBrains Mono;
-    src: url(assets/fonts/JetBrainsMono-Regular.ttf) format("ttf");
+    src: url(fonts/JetBrainsMono-Regular.ttf) format("ttf");
   }
 
   @font-face {
     font-family: Assistant;
-    src:  url(assets/fonts/Assistant-Regular.ttf) format("ttf");
+    src:  url(fonts/Assistant-Regular.ttf) format("ttf");
   }
 
   @font-face {
     font-family: Source Serif Pro;
-    src: url(assets/fonts/SourceSerifPro-Regular.ttf) format("ttf");
+    src: url(fonts/SourceSerifPro-Regular.ttf) format("ttf");
   }
 }
