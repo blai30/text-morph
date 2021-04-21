@@ -6,8 +6,8 @@ export enum WordMode {
   Unchanged  = 'Unchanged',
   Ordinal = 'Ordinal',
   Words = 'Words',
-  OrdinalWords = 'Ordinal Words',
-  RomanNumerals = 'Roman Numerals',
+  OrdinalWords = 'Ordinal words',
+  RomanNumerals = 'Roman numerals',
   Metrics = 'Metrics',
 }
 
