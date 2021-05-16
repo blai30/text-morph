@@ -1,6 +1,6 @@
 # TextMorph
 
-## Demo
+## Demo: https://blai30.github.io/text-morph
 
 ![demo](https://github.com/blai30/text-morph/blob/main/resources/textmorph.png?raw=true)
 
