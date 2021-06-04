@@ -1,8 +1,10 @@
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
+const mode = process.env.TAILWIND_MODE ? 'jit' : 'aot';
+
 module.exports = {
-  // mode: 'jit',
+  mode: mode,
   // NODE_ENV set to 'production' to purge.
   // Don't purge during development for PostCSS faster reloads.
   purge: [
