@@ -1,21 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @layer base {
-  @font-face {
-    font-family: JetBrains Mono;
-    src: url(fonts/JetBrainsMono-Regular.ttf) format("ttf");
-  }
-
-  @font-face {
-    font-family: Assistant;
-    src:  url(fonts/Assistant-Regular.ttf) format("ttf");
-  }
-
-  @font-face {
-    font-family: Source Serif Pro;
-    src: url(fonts/SourceSerifPro-Regular.ttf) format("ttf");
-  }
+  @import url('https://rsms.me/inter/inter.css');
 }

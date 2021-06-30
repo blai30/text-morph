@@ -1,12 +1,8 @@
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-const mode = process.env.TAILWIND_MODE ? 'jit' : 'aot';
-
 module.exports = {
-  mode: mode,
-  // NODE_ENV set to 'production' to purge.
-  // Don't purge during development for PostCSS faster reloads.
+  mode: 'jit',
   purge: [
     './src/**/*.{js,jsx,ts,tsx,vue,html}',
     './src/index.html',
@@ -22,21 +18,14 @@ module.exports = {
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
-      blue: colors.lightBlue,
+      blue: colors.sky,
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.rose,
     },
     extend: {
-      zIndex: {
-        '-10': '-10',
-      },
       fontFamily: {
-        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
-        serif: ['Source Serif Pro', ...defaultTheme.fontFamily.serif],
-        mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
-        display: ['Assistant'],
-        body: ['Open Sans'],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       typography: (theme) => ({
         dark: {
@@ -70,29 +59,12 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: [
-        'dark',
-        'disabled',
-      ],
-      cursor: [
-        'dark',
-        'disabled',
-      ],
-      opacity: [
-        'dark',
-        'disabled',
-      ],
-      textOpacity: [
-        'dark',
-        'disabled',
-      ],
       typography: [
         'dark',
       ],
     },
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
   ],

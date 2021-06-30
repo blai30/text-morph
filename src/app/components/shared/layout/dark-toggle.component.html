@@ -13,7 +13,7 @@
     [ngClass]="{'bg-indigo-400 dark:bg-indigo-500 text-white': getCurrentTheme() === 'system', 'hover:bg-gray-100 dark:hover:bg-gray-600': getCurrentTheme() !== 'system'}"
     (click)="resetTheme()"
   >
-    <span class="absolute top-0 left-0 -z-10 w-full h-full">
+    <span class="absolute top-0 left-0 z-[-10] w-full h-full">
       <input
         type="radio"
         class="form-radio w-0 h-0 opacity-0 pointer-events-none"
@@ -28,7 +28,7 @@
     [ngClass]="{'bg-indigo-400 dark:bg-indigo-500 text-white': getCurrentTheme() === 'light', 'hover:bg-gray-100 dark:hover:bg-gray-600': getCurrentTheme() !== 'light'}"
     (click)="onToggleDark(false)"
   >
-    <span class="absolute top-0 left-0 -z-10 w-full h-full">
+    <span class="absolute top-0 left-0 z-[-10] w-full h-full">
       <input
         type="radio"
         class="form-radio w-0 h-0 opacity-0 pointer-events-none"
@@ -43,7 +43,7 @@
     [ngClass]="{'bg-indigo-400 dark:bg-indigo-500 text-white': getCurrentTheme() === 'dark', 'hover:bg-gray-100 dark:hover:bg-gray-600': getCurrentTheme() !== 'dark'}"
     (click)="onToggleDark(true)"
   >
-    <span class="absolute top-0 left-0 -z-10 w-full h-full">
+    <span class="absolute top-0 left-0 z-[-10] w-full h-full">
       <input
         type="radio"
         class="form-radio w-0 h-0 opacity-0 pointer-events-none"
