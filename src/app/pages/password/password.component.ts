@@ -1,15 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as converter from 'number-to-words';
-import millify from 'millify';
-
-export enum WordMode {
-  Unchanged = 'Unchanged',
-  Ordinal = 'Ordinal',
-  Words = 'Words',
-  OrdinalWords = 'Ordinal words',
-  RomanNumerals = 'Roman numerals',
-  Metrics = 'Metrics',
-}
 
 @Component({
   selector: 'app-password',
@@ -17,76 +6,58 @@ export enum WordMode {
   styles: [],
 })
 export class PasswordComponent implements OnInit {
-  inputText = 0;
-  outputText = '';
-  wordModes: WordMode[] = [];
-  selectedWordMode: WordMode = WordMode.Unchanged;
+  outputPassword = '';
+  passwordLength = 14;
+  uppercase = true;
+  lowercase = true;
+  numbers = true;
+  special = true;
 
   constructor() {
   }
 
   ngOnInit(): void {
-    this.wordModes = Object.values(WordMode);
+    this.generatePassword();
   }
 
-  onTransform(): void {
-    if (!this.inputText && this.inputText !== 0) {
-      return;
+  generatePassword($event?: Event) {
+    let characterSet = '';
+    let password = '';
+
+    if (this.uppercase) {
+      characterSet += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
 
-    let text = this.inputText.toString();
-
-    switch (this.selectedWordMode) {
-      case WordMode.Ordinal:
-        text = converter.toOrdinal(this.inputText);
-        break;
-      case WordMode.Words:
-        text = converter.toWords(this.inputText);
-        text = text.replace(/hundred /ig, 'hundred and ');
-        break;
-      case WordMode.OrdinalWords:
-        text = converter.toWordsOrdinal(this.inputText);
-        text = text.replace(/hundred /ig, 'hundred and ');
-        break;
-      case WordMode.RomanNumerals:
-        text = this.toRoman(this.inputText);
-        break;
-      case WordMode.Metrics:
-        text = millify(this.inputText);
-        break;
-      case WordMode.Unchanged:
-      default:
-        break;
+    if (this.lowercase) {
+      characterSet += 'abcdefghijklmnopqrstuvwxyz';
     }
 
-    this.outputText = text;
+    if (this.numbers) {
+      characterSet += '0123456789';
+    }
+
+    if (this.special) {
+      characterSet += '!@#$%^&*';
+    }
+
+    for (let i = 0, n = characterSet.length; i < this.passwordLength; i++) {
+      password += characterSet.charAt(Math.floor(Math.random() * n));
+    }
+
+    this.outputPassword = password;
   }
 
-  toRoman(input: number): string {
-    if (input < 1 || input > 3999) {
-      return 'Input integer limited to 1 through 3,999';
+  copyPassword() {
+    navigator.clipboard
+      .writeText(this.outputPassword)
+      .catch((reason) => {
+        console.error(reason);
+      });
+  }
+
+  checkConditions() {
+    if (!this.uppercase && !this.lowercase && !this.numbers && !this.special) {
+      this.lowercase = true;
     }
-
-    const numerals = [
-      // 1 - 9
-      ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
-      // 10 - 90
-      ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'],
-      // 100 - 900
-      ['C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM'],
-      // 1000 - 3000
-      ['M', 'MM', 'MMM'],
-    ];
-
-    const digits = input.toString().split('');
-    let position = digits.length - 1;
-
-    return digits.reduce((roman: string, digit: any) => {
-      if (digit !== '0') {
-        roman += numerals[position][parseInt(digit) - 1];
-      }
-      position--;
-      return roman;
-    }, '');
   }
 }
