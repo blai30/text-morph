@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1625690741825,
+  "timestamp": 1625691255943,
   "index": "/text-morph/index.html",
   "assetGroups": [
     {
@@ -63,7 +63,7 @@
     "/text-morph/bootstrap-icons.woff2": "4649877868a0068ce50b105d0d2a235e8010c98f",
     "/text-morph/favicon.ico": "ddeb2e1d0addc9a6fac17dc0bbe9d2b3283305ed",
     "/text-morph/index.html": "b7110edf9939033eba5eed63274af648490d93c9",
-    "/text-morph/main.js": "e5f798434a7155c4e3325a671a958ebd942fee47",
+    "/text-morph/main.js": "5888b98e48ea63c0fd93615fd556584e440bb49f",
     "/text-morph/manifest.webmanifest": "78e8c7053d75f0a8b7398a69ad7e6946db4223a1",
     "/text-morph/polyfills.js": "a29b4cf5700c804613a152a1516e831df00445a0",
     "/text-morph/runtime.js": "9caea15fbc72c32e654b789a3b4c7eae83ad1a6a",

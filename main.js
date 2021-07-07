@@ -33,13 +33,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppRoutingModule": () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ 9895);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 9895);
 /* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./services */ 1866);
 /* harmony import */ var _pages_not_found__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/not-found */ 8923);
 /* harmony import */ var _pages_about__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/about */ 8778);
 /* harmony import */ var _pages_word_case__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/word-case */ 1957);
 /* harmony import */ var _pages_numbers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/numbers */ 8294);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _pages_password__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/password */ 4340);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 7716);
+
 
 
 
@@ -66,6 +68,10 @@ const routes = [
         path: 'numbers',
         component: _pages_numbers__WEBPACK_IMPORTED_MODULE_4__.NumbersComponent,
     },
+    {
+        path: 'password',
+        component: _pages_password__WEBPACK_IMPORTED_MODULE_5__.PasswordComponent,
+    },
     // Must be last to catch all invalid routes.
     {
         path: '**',
@@ -75,13 +81,13 @@ const routes = [
 class AppRoutingModule {
 }
 AppRoutingModule.ɵfac = function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); };
-AppRoutingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
-AppRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({ imports: [[
-            _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule.forRoot(routes, {
+AppRoutingModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
+AppRoutingModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ imports: [[
+            _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule.forRoot(routes, {
                 preloadingStrategy: _services__WEBPACK_IMPORTED_MODULE_0__.SelectivePreloadingStrategyService,
             })
-        ], _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterModule] }); })();
+        ], _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule] }); })();
 
 
 /***/ }),
@@ -144,10 +150,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser */ 9075);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ 5835);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ 3679);
-/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ngx-markdown */ 2443);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser */ 9075);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ 5835);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 3679);
+/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ngx-markdown */ 2443);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _components_shared__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/shared */ 1532);
@@ -155,10 +161,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_not_found__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/not-found */ 8923);
 /* harmony import */ var _pages_word_case_word_case_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/word-case/word-case.module */ 166);
 /* harmony import */ var _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/numbers/numbers.module */ 4623);
-/* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/service-worker */ 2249);
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../environments/environment */ 2340);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ 9895);
+/* harmony import */ var _pages_password_password_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/password/password.module */ 2302);
+/* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/service-worker */ 2249);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../environments/environment */ 2340);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ 9895);
+
 
 
 
@@ -180,33 +188,35 @@ class AppModule {
     constructor(router) {
     }
 }
-AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_9__.Router)); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ providers: [], imports: [[
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule,
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__.BrowserAnimationsModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormsModule,
-            ngx_markdown__WEBPACK_IMPORTED_MODULE_13__.MarkdownModule.forRoot(),
+AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_10__.Router)); };
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ providers: [], imports: [[
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule,
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule,
+            ngx_markdown__WEBPACK_IMPORTED_MODULE_14__.MarkdownModule.forRoot(),
             _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule,
             _components_shared__WEBPACK_IMPORTED_MODULE_2__.SharedModule,
             _pages_about_about_module__WEBPACK_IMPORTED_MODULE_3__.AboutModule,
             _pages_word_case_word_case_module__WEBPACK_IMPORTED_MODULE_5__.WordCaseModule,
             _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__.NumbersModule,
-            _angular_service_worker__WEBPACK_IMPORTED_MODULE_14__.ServiceWorkerModule.register('ngsw-worker.js', {
-                enabled: _environments_environment__WEBPACK_IMPORTED_MODULE_7__.environment.production,
+            _pages_password_password_module__WEBPACK_IMPORTED_MODULE_7__.PasswordModule,
+            _angular_service_worker__WEBPACK_IMPORTED_MODULE_15__.ServiceWorkerModule.register('ngsw-worker.js', {
+                enabled: _environments_environment__WEBPACK_IMPORTED_MODULE_8__.environment.production,
                 // Register the ServiceWorker as soon as the app is stable
                 // or after 30 seconds (whichever comes first).
-                registrationStrategy: 'registerWhenStable:30000'
+                registrationStrategy: 'registerWhenStable:30000',
             }),
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent,
-        _pages_not_found__WEBPACK_IMPORTED_MODULE_4__.NotFoundComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule,
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__.BrowserAnimationsModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormsModule, ngx_markdown__WEBPACK_IMPORTED_MODULE_13__.MarkdownModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule,
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent,
+        _pages_not_found__WEBPACK_IMPORTED_MODULE_4__.NotFoundComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_11__.BrowserModule,
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__.BrowserAnimationsModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_13__.FormsModule, ngx_markdown__WEBPACK_IMPORTED_MODULE_14__.MarkdownModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule,
         _components_shared__WEBPACK_IMPORTED_MODULE_2__.SharedModule,
         _pages_about_about_module__WEBPACK_IMPORTED_MODULE_3__.AboutModule,
         _pages_word_case_word_case_module__WEBPACK_IMPORTED_MODULE_5__.WordCaseModule,
-        _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__.NumbersModule, _angular_service_worker__WEBPACK_IMPORTED_MODULE_14__.ServiceWorkerModule] }); })();
+        _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__.NumbersModule,
+        _pages_password_password_module__WEBPACK_IMPORTED_MODULE_7__.PasswordModule, _angular_service_worker__WEBPACK_IMPORTED_MODULE_15__.ServiceWorkerModule] }); })();
 
 
 /***/ }),
@@ -464,7 +474,7 @@ class SidebarComponent {
     }
 }
 SidebarComponent.ɵfac = function SidebarComponent_Factory(t) { return new (t || SidebarComponent)(); };
-SidebarComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SidebarComponent, selectors: [["app-layout-sidebar"]], decls: 34, vars: 10, consts: [[1, "md:flex", "md:flex-row", "w-full", "h-full"], [1, "w-full", "md:w-64", "text-gray-700", "bg-gray-100", "dark:text-gray-200", "dark:bg-gray-800"], [1, "block", "flex", "p-4", "items-center", "justify-between"], ["routerLink", "/", 1, "block", "flex", "px-2", "text-lg", "font-semibold", "tracking-widest", "text-gray-900", "uppercase", "rounded-lg", "dark:text-white", "focus:outline-none", "focus:shadow-outline"], [1, "text-indigo-800", "dark:text-indigo-300"], [1, "md:hidden", "focus:outline-none", "focus:shadow-outline", 3, "click"], ["fill", "currentColor", "viewBox", "0 0 20 20", 1, "w-6", "h-6"], ["fill-rule", "evenodd", "d", "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z", "clip-rule", "evenodd", 3, "ngClass"], ["fill-rule", "evenodd", "d", "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z", "clip-rule", "evenodd", 3, "ngClass"], [1, "md:block", "px-4", "pt-2", "pb-4", "md:pb-0", "md:overflow-y-auto", 3, "ngClass"], [1, "space-y-3"], ["routerLink", "/wordcase", "routerLinkActive", "bg-indigo-200 dark:bg-indigo-700", 1, "block", "flex", "items-center", "space-x-3", "px-3", "py-2", "transition", "duration-100", "ease-in-out", "text-sm", "font-semibold", "text-gray-900", "rounded-lg", "dark:hover:bg-indigo-900", "dark:focus:text-white", "dark:hover:text-white", "dark:text-gray-200", "hover:text-gray-900", "focus:text-gray-900", "hover:bg-indigo-100", "focus:outline-none", "focus:shadow-outline"], [1, "bi-type", "text-2xl"], ["routerLink", "/numbers", "routerLinkActive", "bg-indigo-200 dark:bg-indigo-700", 1, "block", "flex", "items-center", "space-x-3", "px-3", "py-2", "transition", "duration-100", "ease-in-out", "text-sm", "font-semibold", "text-gray-900", "rounded-lg", "dark:hover:bg-indigo-900", "dark:focus:text-white", "dark:hover:text-white", "dark:text-gray-200", "hover:text-gray-900", "focus:text-gray-900", "hover:bg-indigo-100", "focus:outline-none", "focus:shadow-outline"], [1, "bi-calculator-fill", "text-2xl"], [1, "cursor-not-allowed", "opacity-40"], ["routerLinkActive", "bg-indigo-200 dark:bg-indigo-700", 1, "block", "flex", "items-center", "space-x-3", "px-3", "py-2", "transition", "duration-100", "ease-in-out", "text-sm", "font-semibold", "text-gray-900", "rounded-lg", "dark:hover:bg-indigo-900", "dark:focus:text-white", "dark:hover:text-white", "dark:text-gray-200", "hover:text-gray-900", "focus:text-gray-900", "hover:bg-indigo-100", "focus:outline-none", "focus:shadow-outline"], [1, "bi-calendar3", "text-2xl"], [1, "bi-credit-card", "text-2xl"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
+SidebarComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SidebarComponent, selectors: [["app-layout-sidebar"]], decls: 39, vars: 10, consts: [[1, "md:flex", "md:flex-row", "w-full", "h-full"], [1, "w-full", "md:w-64", "text-gray-700", "bg-gray-100", "dark:text-gray-200", "dark:bg-gray-800"], [1, "block", "flex", "p-4", "items-center", "justify-between"], ["routerLink", "/", 1, "block", "flex", "px-2", "text-lg", "font-semibold", "tracking-widest", "text-gray-900", "uppercase", "rounded-lg", "dark:text-white", "focus:outline-none", "focus:shadow-outline"], [1, "text-indigo-800", "dark:text-indigo-300"], [1, "md:hidden", "focus:outline-none", "focus:shadow-outline", 3, "click"], ["fill", "currentColor", "viewBox", "0 0 20 20", 1, "w-6", "h-6"], ["fill-rule", "evenodd", "d", "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z", "clip-rule", "evenodd", 3, "ngClass"], ["fill-rule", "evenodd", "d", "M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z", "clip-rule", "evenodd", 3, "ngClass"], [1, "md:block", "px-4", "pt-2", "pb-4", "md:pb-0", "md:overflow-y-auto", 3, "ngClass"], [1, "space-y-3"], ["routerLink", "/wordcase", "routerLinkActive", "bg-indigo-200 dark:bg-indigo-700", 1, "block", "flex", "items-center", "space-x-3", "px-3", "py-2", "transition", "duration-100", "ease-in-out", "text-sm", "font-semibold", "text-gray-900", "rounded-lg", "dark:hover:bg-indigo-900", "dark:focus:text-white", "dark:hover:text-white", "dark:text-gray-200", "hover:text-gray-900", "focus:text-gray-900", "hover:bg-indigo-100", "focus:outline-none", "focus:shadow-outline"], [1, "bi-type", "text-2xl"], ["routerLink", "/numbers", "routerLinkActive", "bg-indigo-200 dark:bg-indigo-700", 1, "block", "flex", "items-center", "space-x-3", "px-3", "py-2", "transition", "duration-100", "ease-in-out", "text-sm", "font-semibold", "text-gray-900", "rounded-lg", "dark:hover:bg-indigo-900", "dark:focus:text-white", "dark:hover:text-white", "dark:text-gray-200", "hover:text-gray-900", "focus:text-gray-900", "hover:bg-indigo-100", "focus:outline-none", "focus:shadow-outline"], [1, "bi-calculator-fill", "text-2xl"], [1, "cursor-not-allowed", "opacity-40"], ["routerLinkActive", "bg-indigo-200 dark:bg-indigo-700", 1, "block", "flex", "items-center", "space-x-3", "px-3", "py-2", "transition", "duration-100", "ease-in-out", "text-sm", "font-semibold", "text-gray-900", "rounded-lg", "dark:hover:bg-indigo-900", "dark:focus:text-white", "dark:hover:text-white", "dark:text-gray-200", "hover:text-gray-900", "focus:text-gray-900", "hover:bg-indigo-100", "focus:outline-none", "focus:shadow-outline"], [1, "bi-calendar3", "text-2xl"], [1, "bi-credit-card", "text-2xl"], ["routerLink", "/password", "routerLinkActive", "bg-indigo-200 dark:bg-indigo-700", 1, "block", "flex", "items-center", "space-x-3", "px-3", "py-2", "transition", "duration-100", "ease-in-out", "text-sm", "font-semibold", "text-gray-900", "rounded-lg", "dark:hover:bg-indigo-900", "dark:focus:text-white", "dark:hover:text-white", "dark:text-gray-200", "hover:text-gray-900", "focus:text-gray-900", "hover:bg-indigo-100", "focus:outline-none", "focus:shadow-outline"], [1, "bi-key", "text-2xl"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -517,6 +527,14 @@ SidebarComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0_
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "i", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "Currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "a", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "i", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "Password Generator");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -940,6 +958,231 @@ NumbersModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__.ReactiveFormsModule,
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NumbersModule, { declarations: [_numbers_component__WEBPACK_IMPORTED_MODULE_0__.NumbersComponent], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormsModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_3__.ReactiveFormsModule] }); })();
+
+
+/***/ }),
+
+/***/ 4340:
+/*!*****************************************!*\
+  !*** ./src/app/pages/password/index.ts ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PasswordComponent": () => (/* reexport safe */ _password_component__WEBPACK_IMPORTED_MODULE_0__.PasswordComponent),
+/* harmony export */   "WordMode": () => (/* reexport safe */ _password_component__WEBPACK_IMPORTED_MODULE_0__.WordMode)
+/* harmony export */ });
+/* harmony import */ var _password_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./password.component */ 5117);
+
+
+
+/***/ }),
+
+/***/ 5117:
+/*!******************************************************!*\
+  !*** ./src/app/pages/password/password.component.ts ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "WordMode": () => (/* binding */ WordMode),
+/* harmony export */   "PasswordComponent": () => (/* binding */ PasswordComponent)
+/* harmony export */ });
+/* harmony import */ var number_to_words__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! number-to-words */ 4285);
+/* harmony import */ var number_to_words__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(number_to_words__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var millify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! millify */ 2840);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 3679);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 8583);
+
+
+
+
+
+const _c0 = function (a0, a1) { return { "bg-indigo-400 dark:bg-indigo-500 text-white": a0, "hover:bg-gray-100 dark:hover:bg-gray-600": a1 }; };
+function PasswordComponent_label_10_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "label", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "span", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "input", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function PasswordComponent_label_10_Template_input_ngModelChange_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r2.selectedWordMode = $event; });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const wordMode_r1 = ctx.$implicit;
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction2"](4, _c0, wordMode_r1 === ctx_r0.selectedWordMode, wordMode_r1 !== ctx_r0.selectedWordMode));
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", wordMode_r1)("ngModel", ctx_r0.selectedWordMode);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](wordMode_r1);
+} }
+const _c1 = function (a0) { return { "cursor-not-allowed": a0 }; };
+var WordMode;
+(function (WordMode) {
+    WordMode["Unchanged"] = "Unchanged";
+    WordMode["Ordinal"] = "Ordinal";
+    WordMode["Words"] = "Words";
+    WordMode["OrdinalWords"] = "Ordinal words";
+    WordMode["RomanNumerals"] = "Roman numerals";
+    WordMode["Metrics"] = "Metrics";
+})(WordMode || (WordMode = {}));
+class PasswordComponent {
+    constructor() {
+        this.inputText = 0;
+        this.outputText = '';
+        this.wordModes = [];
+        this.selectedWordMode = WordMode.Unchanged;
+    }
+    ngOnInit() {
+        this.wordModes = Object.values(WordMode);
+    }
+    onTransform() {
+        if (!this.inputText && this.inputText !== 0) {
+            return;
+        }
+        let text = this.inputText.toString();
+        switch (this.selectedWordMode) {
+            case WordMode.Ordinal:
+                text = number_to_words__WEBPACK_IMPORTED_MODULE_0__.toOrdinal(this.inputText);
+                break;
+            case WordMode.Words:
+                text = number_to_words__WEBPACK_IMPORTED_MODULE_0__.toWords(this.inputText);
+                text = text.replace(/hundred /ig, 'hundred and ');
+                break;
+            case WordMode.OrdinalWords:
+                text = number_to_words__WEBPACK_IMPORTED_MODULE_0__.toWordsOrdinal(this.inputText);
+                text = text.replace(/hundred /ig, 'hundred and ');
+                break;
+            case WordMode.RomanNumerals:
+                text = this.toRoman(this.inputText);
+                break;
+            case WordMode.Metrics:
+                text = (0,millify__WEBPACK_IMPORTED_MODULE_1__.default)(this.inputText);
+                break;
+            case WordMode.Unchanged:
+            default:
+                break;
+        }
+        this.outputText = text;
+    }
+    toRoman(input) {
+        if (input < 1 || input > 3999) {
+            return 'Input integer limited to 1 through 3,999';
+        }
+        const numerals = [
+            // 1 - 9
+            ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
+            // 10 - 90
+            ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'],
+            // 100 - 900
+            ['C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM'],
+            // 1000 - 3000
+            ['M', 'MM', 'MMM'],
+        ];
+        const digits = input.toString().split('');
+        let position = digits.length - 1;
+        return digits.reduce((roman, digit) => {
+            if (digit !== '0') {
+                roman += numerals[position][parseInt(digit) - 1];
+            }
+            position--;
+            return roman;
+        }, '');
+    }
+}
+PasswordComponent.ɵfac = function PasswordComponent_Factory(t) { return new (t || PasswordComponent)(); };
+PasswordComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: PasswordComponent, selectors: [["app-password"]], decls: 19, vars: 7, consts: [[1, "container", "mx-auto", "px-6", "py-4"], [1, "space-y-6"], [1, "block", "w-full"], [1, "dark:text-white"], ["type", "number", "inputmode", "decimal", "name", "inputText", "placeholder", "Number to transform", 1, "form-textarea", "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "inline-flex"], [1, "grid", "grid-cols-2", "lg:grid-cols-3"], ["class", "cursor-pointer select-none px-4 py-2 block text-center justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none", 3, "ngClass", 4, "ngFor", "ngForOf"], ["type", "button", 1, "w-full", "h-12", "transition", "duration-100", "ease-in-out", "font-semibold", "text-white", "bg-green-500", "hover:bg-green-700", "disabled:bg-green-500", "disabled:opacity-50", "focus:outline-none", 3, "ngClass", "disabled", "click"], ["name", "outputText", "rows", "4", "placeholder", "Result", "onclick", "this.focus();this.select()", 1, "form-textarea", "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "cursor-pointer", "select-none", "px-4", "py-2", "block", "text-center", "justify-between", "items-center", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:text-white", "hover:bg-gray-100", "dark:hover:bg-gray-600", "border", "border-gray-300", "dark:border-gray-600", "focus:outline-none", 3, "ngClass"], [1, "absolute", "top-0", "left-0", "z-[-10]", "w-full", "h-full"], ["type", "radio", 1, "form-radio", "w-0", "h-0", "opacity-0", "pointer-events-none", 3, "value", "ngModel", "ngModelChange"]], template: function PasswordComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "label", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, "Input text");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](6, "input", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_6_listener($event) { return ctx.inputText = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](8, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](9, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](10, PasswordComponent_label_10_Template, 5, 7, "label", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](12, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function PasswordComponent_Template_button_click_12_listener() { return ctx.onTransform(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](13, " Transform ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "label", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](16, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](17, "Output text");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](18, "textarea", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_textarea_ngModelChange_18_listener($event) { return ctx.outputText = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngModel", ctx.inputText);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.wordModes);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](5, _c1, !ctx.inputText && ctx.inputText !== 0))("disabled", !ctx.inputText && ctx.inputText !== 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngModel", ctx.outputText);
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgClass, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.RadioControlValueAccessor], encapsulation: 2 });
+
+
+/***/ }),
+
+/***/ 2302:
+/*!***************************************************!*\
+  !*** ./src/app/pages/password/password.module.ts ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PasswordModule": () => (/* binding */ PasswordModule)
+/* harmony export */ });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 8583);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 3679);
+/* harmony import */ var _password_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./password.component */ 5117);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 7716);
+
+
+
+
+class PasswordModule {
+}
+PasswordModule.ɵfac = function PasswordModule_Factory(t) { return new (t || PasswordModule)(); };
+PasswordModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: PasswordModule });
+PasswordModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ imports: [[
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormsModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__.ReactiveFormsModule,
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](PasswordModule, { declarations: [_password_component__WEBPACK_IMPORTED_MODULE_0__.PasswordComponent], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.CommonModule,
         _angular_forms__WEBPACK_IMPORTED_MODULE_3__.FormsModule,
         _angular_forms__WEBPACK_IMPORTED_MODULE_3__.ReactiveFormsModule] }); })();
 
