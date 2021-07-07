@@ -1,0 +1,93 @@
+{
+  "configVersion": 1,
+  "timestamp": 1625690741825,
+  "index": "/text-morph/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/text-morph/favicon.ico",
+        "/text-morph/index.html",
+        "/text-morph/main.js",
+        "/text-morph/manifest.webmanifest",
+        "/text-morph/polyfills.js",
+        "/text-morph/runtime.js",
+        "/text-morph/scripts.js",
+        "/text-morph/styles.css",
+        "/text-morph/vendor.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/text-morph/assets/icons/icon-128x128.png",
+        "/text-morph/assets/icons/icon-144x144.png",
+        "/text-morph/assets/icons/icon-152x152.png",
+        "/text-morph/assets/icons/icon-192x192.png",
+        "/text-morph/assets/icons/icon-384x384.png",
+        "/text-morph/assets/icons/icon-512x512.png",
+        "/text-morph/assets/icons/icon-72x72.png",
+        "/text-morph/assets/icons/icon-96x96.png",
+        "/text-morph/assets/icons/icon.afdesign",
+        "/text-morph/assets/markdown/about.md",
+        "/text-morph/bootstrap-icons.woff",
+        "/text-morph/bootstrap-icons.woff2"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/text-morph/assets/icons/icon-128x128.png": "9b0d81bfa086a83a708459090cf042438554401e",
+    "/text-morph/assets/icons/icon-144x144.png": "129dc2993c12b7d32e7595d6845111fc6d1dd75e",
+    "/text-morph/assets/icons/icon-152x152.png": "d1886a207558cbc670420e0d2473279abc2fe03d",
+    "/text-morph/assets/icons/icon-192x192.png": "f649f08a004204bc68f3d567304e55491e4a2e25",
+    "/text-morph/assets/icons/icon-384x384.png": "9c7b7b515df394b8504153adb4720fcb8fb5209f",
+    "/text-morph/assets/icons/icon-512x512.png": "8db7432f515130ce320e9aaf15b2e5f6109daec9",
+    "/text-morph/assets/icons/icon-72x72.png": "002752aedc39faecf501885ad8ed3b807c29fc01",
+    "/text-morph/assets/icons/icon-96x96.png": "c3fd5600645ddbafdf6bf32fd1a223b8ce376038",
+    "/text-morph/assets/icons/icon.afdesign": "5f8efda9419cb388024b8ae0d7ecad8276584573",
+    "/text-morph/assets/markdown/about.md": "6c2f241ba2f7d5b81d1e10f79cf83f1c496f41c7",
+    "/text-morph/bootstrap-icons.woff": "cbfb7021638656cd7c9159e830cebdf9db059dff",
+    "/text-morph/bootstrap-icons.woff2": "4649877868a0068ce50b105d0d2a235e8010c98f",
+    "/text-morph/favicon.ico": "ddeb2e1d0addc9a6fac17dc0bbe9d2b3283305ed",
+    "/text-morph/index.html": "b7110edf9939033eba5eed63274af648490d93c9",
+    "/text-morph/main.js": "e5f798434a7155c4e3325a671a958ebd942fee47",
+    "/text-morph/manifest.webmanifest": "78e8c7053d75f0a8b7398a69ad7e6946db4223a1",
+    "/text-morph/polyfills.js": "a29b4cf5700c804613a152a1516e831df00445a0",
+    "/text-morph/runtime.js": "9caea15fbc72c32e654b789a3b4c7eae83ad1a6a",
+    "/text-morph/scripts.js": "77990e28ee3fb00a6108da61bd90201300e6732a",
+    "/text-morph/styles.css": "5d265a6236db0408159176b85e2921d83599c02c",
+    "/text-morph/vendor.js": "b8b5864aad07efd323758160ed4cf2ae47ccee91"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

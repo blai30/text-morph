@@ -144,10 +144,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppModule": () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser */ 9075);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ 5835);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ 3679);
-/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-markdown */ 2443);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser */ 9075);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/platform-browser/animations */ 5835);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ 3679);
+/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ngx-markdown */ 2443);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _components_shared__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/shared */ 1532);
@@ -155,8 +155,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_not_found__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/not-found */ 8923);
 /* harmony import */ var _pages_word_case_word_case_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/word-case/word-case.module */ 166);
 /* harmony import */ var _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/numbers/numbers.module */ 4623);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ 9895);
+/* harmony import */ var _angular_service_worker__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/service-worker */ 2249);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../environments/environment */ 2340);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ 9895);
+
+
+
 
 
 
@@ -175,27 +180,33 @@ class AppModule {
     constructor(router) {
     }
 }
-AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router)); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ providers: [], imports: [[
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule,
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__.BrowserAnimationsModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_11__.FormsModule,
-            ngx_markdown__WEBPACK_IMPORTED_MODULE_12__.MarkdownModule.forRoot(),
+AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_9__.Router)); };
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ providers: [], imports: [[
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule,
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__.BrowserAnimationsModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormsModule,
+            ngx_markdown__WEBPACK_IMPORTED_MODULE_13__.MarkdownModule.forRoot(),
             _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule,
             _components_shared__WEBPACK_IMPORTED_MODULE_2__.SharedModule,
             _pages_about_about_module__WEBPACK_IMPORTED_MODULE_3__.AboutModule,
             _pages_word_case_word_case_module__WEBPACK_IMPORTED_MODULE_5__.WordCaseModule,
             _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__.NumbersModule,
+            _angular_service_worker__WEBPACK_IMPORTED_MODULE_14__.ServiceWorkerModule.register('ngsw-worker.js', {
+                enabled: _environments_environment__WEBPACK_IMPORTED_MODULE_7__.environment.production,
+                // Register the ServiceWorker as soon as the app is stable
+                // or after 30 seconds (whichever comes first).
+                registrationStrategy: 'registerWhenStable:30000'
+            }),
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent,
-        _pages_not_found__WEBPACK_IMPORTED_MODULE_4__.NotFoundComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule,
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__.BrowserAnimationsModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_11__.FormsModule, ngx_markdown__WEBPACK_IMPORTED_MODULE_12__.MarkdownModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule,
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_0__.AppComponent,
+        _pages_not_found__WEBPACK_IMPORTED_MODULE_4__.NotFoundComponent], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__.BrowserModule,
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__.BrowserAnimationsModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_12__.FormsModule, ngx_markdown__WEBPACK_IMPORTED_MODULE_13__.MarkdownModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_1__.AppRoutingModule,
         _components_shared__WEBPACK_IMPORTED_MODULE_2__.SharedModule,
         _pages_about_about_module__WEBPACK_IMPORTED_MODULE_3__.AboutModule,
         _pages_word_case_word_case_module__WEBPACK_IMPORTED_MODULE_5__.WordCaseModule,
-        _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__.NumbersModule] }); })();
+        _pages_numbers_numbers_module__WEBPACK_IMPORTED_MODULE_6__.NumbersModule, _angular_service_worker__WEBPACK_IMPORTED_MODULE_14__.ServiceWorkerModule] }); })();
 
 
 /***/ }),
