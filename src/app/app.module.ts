@@ -12,6 +12,7 @@ import { AboutModule } from './pages/about/about.module';
 import { NotFoundComponent } from './pages/not-found';
 import { WordCaseModule } from './pages/word-case/word-case.module';
 import { NumbersModule } from './pages/numbers/numbers.module';
+import { PasswordModule } from './pages/password/password.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -26,11 +27,12 @@ import { environment } from '../environments/environment';
     AboutModule,
     WordCaseModule,
     NumbersModule,
+    PasswordModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
   declarations: [

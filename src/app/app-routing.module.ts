@@ -5,6 +5,7 @@ import { NotFoundComponent } from './pages/not-found';
 import { AboutComponent } from './pages/about';
 import { WordCaseComponent } from './pages/word-case';
 import { NumbersComponent } from './pages/numbers';
+import { PasswordComponent } from './pages/password';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'numbers',
     component: NumbersComponent,
+  },
+  {
+    path: 'password',
+    component: PasswordComponent,
   },
   // Must be last to catch all invalid routes.
   {

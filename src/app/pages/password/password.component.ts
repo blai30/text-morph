@@ -12,11 +12,11 @@ export enum WordMode {
 }
 
 @Component({
-  selector: 'app-numbers',
-  templateUrl: './numbers.component.html',
+  selector: 'app-password',
+  templateUrl: './password.component.html',
   styles: [],
 })
-export class NumbersComponent implements OnInit {
+export class PasswordComponent implements OnInit {
   inputText = 0;
   outputText = '';
   wordModes: WordMode[] = [];
