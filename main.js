@@ -877,7 +877,7 @@ class NumbersComponent {
     }
 }
 NumbersComponent.ɵfac = function NumbersComponent_Factory(t) { return new (t || NumbersComponent)(); };
-NumbersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NumbersComponent, selectors: [["app-numbers"]], decls: 19, vars: 7, consts: [[1, "container", "mx-auto", "px-6", "py-4"], [1, "space-y-6"], [1, "block", "w-full"], [1, "dark:text-white"], ["type", "number", "inputmode", "decimal", "name", "inputText", "placeholder", "Number to transform", 1, "form-textarea", "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "inline-flex"], [1, "grid", "grid-cols-2", "lg:grid-cols-3"], ["class", "cursor-pointer select-none px-4 py-2 block text-center justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none", 3, "ngClass", 4, "ngFor", "ngForOf"], ["type", "button", 1, "w-full", "h-12", "transition", "duration-100", "ease-in-out", "font-semibold", "text-white", "bg-green-500", "hover:bg-green-700", "disabled:bg-green-500", "disabled:opacity-50", "focus:outline-none", 3, "ngClass", "disabled", "click"], ["name", "outputText", "rows", "4", "placeholder", "Result", "onclick", "this.focus();this.select()", 1, "form-textarea", "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "cursor-pointer", "select-none", "px-4", "py-2", "block", "text-center", "justify-between", "items-center", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:text-white", "hover:bg-gray-100", "dark:hover:bg-gray-600", "border", "border-gray-300", "dark:border-gray-600", "focus:outline-none", 3, "ngClass"], [1, "absolute", "top-0", "left-0", "z-[-10]", "w-full", "h-full"], ["type", "radio", 1, "form-radio", "w-0", "h-0", "opacity-0", "pointer-events-none", 3, "value", "ngModel", "ngModelChange"]], template: function NumbersComponent_Template(rf, ctx) { if (rf & 1) {
+NumbersComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NumbersComponent, selectors: [["app-numbers"]], decls: 19, vars: 7, consts: [[1, "container", "mx-auto", "px-6", "py-4"], [1, "space-y-6"], [1, "block", "w-full"], [1, "dark:text-white"], ["type", "number", "inputmode", "decimal", "name", "inputText", "placeholder", "Number to transform", 1, "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "inline-flex"], [1, "grid", "grid-cols-2", "lg:grid-cols-3"], ["class", "cursor-pointer select-none px-4 py-2 block text-center justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none", 3, "ngClass", 4, "ngFor", "ngForOf"], ["type", "button", 1, "w-full", "h-12", "transition", "duration-100", "ease-in-out", "font-semibold", "text-white", "bg-green-500", "hover:bg-green-700", "disabled:bg-green-500", "disabled:opacity-50", "focus:outline-none", 3, "ngClass", "disabled", "click"], ["name", "outputText", "rows", "4", "placeholder", "Result", "onclick", "this.focus();this.select()", 1, "form-textarea", "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "cursor-pointer", "select-none", "px-4", "py-2", "block", "text-center", "justify-between", "items-center", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:text-white", "hover:bg-gray-100", "dark:hover:bg-gray-600", "border", "border-gray-300", "dark:border-gray-600", "focus:outline-none", 3, "ngClass"], [1, "absolute", "top-0", "left-0", "z-[-10]", "w-full", "h-full"], ["type", "radio", 1, "form-radio", "w-0", "h-0", "opacity-0", "pointer-events-none", 3, "value", "ngModel", "ngModelChange"]], template: function NumbersComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "div", 2);
@@ -973,8 +973,7 @@ NumbersModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__["
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "PasswordComponent": () => (/* reexport safe */ _password_component__WEBPACK_IMPORTED_MODULE_0__.PasswordComponent),
-/* harmony export */   "WordMode": () => (/* reexport safe */ _password_component__WEBPACK_IMPORTED_MODULE_0__.WordMode)
+/* harmony export */   "PasswordComponent": () => (/* reexport safe */ _password_component__WEBPACK_IMPORTED_MODULE_0__.PasswordComponent)
 /* harmony export */ });
 /* harmony import */ var _password_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./password.component */ 5117);
 
@@ -991,165 +990,159 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "WordMode": () => (/* binding */ WordMode),
 /* harmony export */   "PasswordComponent": () => (/* binding */ PasswordComponent)
 /* harmony export */ });
-/* harmony import */ var number_to_words__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! number-to-words */ 4285);
-/* harmony import */ var number_to_words__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(number_to_words__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var millify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! millify */ 2840);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 7716);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 3679);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 8583);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7716);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 3679);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 8583);
 
 
 
-
-
-const _c0 = function (a0, a1) { return { "bg-indigo-400 dark:bg-indigo-500 text-white": a0, "hover:bg-gray-100 dark:hover:bg-gray-600": a1 }; };
-function PasswordComponent_label_10_Template(rf, ctx) { if (rf & 1) {
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "label", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "span", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "input", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function PasswordComponent_label_10_Template_input_ngModelChange_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r2.selectedWordMode = $event; });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const wordMode_r1 = ctx.$implicit;
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction2"](4, _c0, wordMode_r1 === ctx_r0.selectedWordMode, wordMode_r1 !== ctx_r0.selectedWordMode));
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", wordMode_r1)("ngModel", ctx_r0.selectedWordMode);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](wordMode_r1);
-} }
-const _c1 = function (a0) { return { "cursor-not-allowed": a0 }; };
-var WordMode;
-(function (WordMode) {
-    WordMode["Unchanged"] = "Unchanged";
-    WordMode["Ordinal"] = "Ordinal";
-    WordMode["Words"] = "Words";
-    WordMode["OrdinalWords"] = "Ordinal words";
-    WordMode["RomanNumerals"] = "Roman numerals";
-    WordMode["Metrics"] = "Metrics";
-})(WordMode || (WordMode = {}));
+const _c0 = function (a0) { return { "cursor-not-allowed": a0 }; };
 class PasswordComponent {
     constructor() {
-        this.inputText = 0;
-        this.outputText = '';
-        this.wordModes = [];
-        this.selectedWordMode = WordMode.Unchanged;
+        this.outputPassword = '';
+        this.passwordLength = 14;
+        this.uppercase = true;
+        this.lowercase = true;
+        this.numbers = true;
+        this.special = true;
     }
     ngOnInit() {
-        this.wordModes = Object.values(WordMode);
+        this.generatePassword();
     }
-    onTransform() {
-        if (!this.inputText && this.inputText !== 0) {
-            return;
+    generatePassword($event) {
+        let characterSet = '';
+        let password = '';
+        if (this.uppercase) {
+            characterSet += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         }
-        let text = this.inputText.toString();
-        switch (this.selectedWordMode) {
-            case WordMode.Ordinal:
-                text = number_to_words__WEBPACK_IMPORTED_MODULE_0__.toOrdinal(this.inputText);
-                break;
-            case WordMode.Words:
-                text = number_to_words__WEBPACK_IMPORTED_MODULE_0__.toWords(this.inputText);
-                text = text.replace(/hundred /ig, 'hundred and ');
-                break;
-            case WordMode.OrdinalWords:
-                text = number_to_words__WEBPACK_IMPORTED_MODULE_0__.toWordsOrdinal(this.inputText);
-                text = text.replace(/hundred /ig, 'hundred and ');
-                break;
-            case WordMode.RomanNumerals:
-                text = this.toRoman(this.inputText);
-                break;
-            case WordMode.Metrics:
-                text = (0,millify__WEBPACK_IMPORTED_MODULE_1__.default)(this.inputText);
-                break;
-            case WordMode.Unchanged:
-            default:
-                break;
+        if (this.lowercase) {
+            characterSet += 'abcdefghijklmnopqrstuvwxyz';
         }
-        this.outputText = text;
+        if (this.numbers) {
+            characterSet += '0123456789';
+        }
+        if (this.special) {
+            characterSet += '!@#$%^&*';
+        }
+        for (let i = 0, n = characterSet.length; i < this.passwordLength; i++) {
+            password += characterSet.charAt(Math.floor(Math.random() * n));
+        }
+        this.outputPassword = password;
     }
-    toRoman(input) {
-        if (input < 1 || input > 3999) {
-            return 'Input integer limited to 1 through 3,999';
+    copyPassword() {
+        navigator.clipboard
+            .writeText(this.outputPassword)
+            .catch((reason) => {
+            console.error(reason);
+        });
+    }
+    checkConditions() {
+        if (!this.uppercase && !this.lowercase && !this.numbers && !this.special) {
+            this.lowercase = true;
         }
-        const numerals = [
-            // 1 - 9
-            ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
-            // 10 - 90
-            ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'],
-            // 100 - 900
-            ['C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM'],
-            // 1000 - 3000
-            ['M', 'MM', 'MMM'],
-        ];
-        const digits = input.toString().split('');
-        let position = digits.length - 1;
-        return digits.reduce((roman, digit) => {
-            if (digit !== '0') {
-                roman += numerals[position][parseInt(digit) - 1];
-            }
-            position--;
-            return roman;
-        }, '');
     }
 }
 PasswordComponent.ɵfac = function PasswordComponent_Factory(t) { return new (t || PasswordComponent)(); };
-PasswordComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: PasswordComponent, selectors: [["app-password"]], decls: 19, vars: 7, consts: [[1, "container", "mx-auto", "px-6", "py-4"], [1, "space-y-6"], [1, "block", "w-full"], [1, "dark:text-white"], ["type", "number", "inputmode", "decimal", "name", "inputText", "placeholder", "Number to transform", 1, "form-textarea", "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "inline-flex"], [1, "grid", "grid-cols-2", "lg:grid-cols-3"], ["class", "cursor-pointer select-none px-4 py-2 block text-center justify-between items-center transition duration-100 ease-in-out dark:bg-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 focus:outline-none", 3, "ngClass", 4, "ngFor", "ngForOf"], ["type", "button", 1, "w-full", "h-12", "transition", "duration-100", "ease-in-out", "font-semibold", "text-white", "bg-green-500", "hover:bg-green-700", "disabled:bg-green-500", "disabled:opacity-50", "focus:outline-none", 3, "ngClass", "disabled", "click"], ["name", "outputText", "rows", "4", "placeholder", "Result", "onclick", "this.focus();this.select()", 1, "form-textarea", "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], [1, "cursor-pointer", "select-none", "px-4", "py-2", "block", "text-center", "justify-between", "items-center", "transition", "duration-100", "ease-in-out", "dark:bg-gray-700", "dark:text-white", "hover:bg-gray-100", "dark:hover:bg-gray-600", "border", "border-gray-300", "dark:border-gray-600", "focus:outline-none", 3, "ngClass"], [1, "absolute", "top-0", "left-0", "z-[-10]", "w-full", "h-full"], ["type", "radio", 1, "form-radio", "w-0", "h-0", "opacity-0", "pointer-events-none", 3, "value", "ngModel", "ngModelChange"]], template: function PasswordComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "label", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](4, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](5, "Input text");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](6, "input", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_6_listener($event) { return ctx.inputText = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](8, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](9, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](10, PasswordComponent_label_10_Template, 5, 7, "label", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](12, "button", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function PasswordComponent_Template_button_click_12_listener() { return ctx.onTransform(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](13, " Transform ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "label", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](16, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](17, "Output text");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](18, "textarea", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_textarea_ngModelChange_18_listener($event) { return ctx.outputText = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+PasswordComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PasswordComponent, selectors: [["app-password"]], decls: 38, vars: 19, consts: [[1, "container", "mx-auto", "px-6", "py-4"], [1, "space-y-6"], [1, "block", "w-full"], [1, "dark:text-white"], ["type", "text", "name", "password", "placeholder", "Password", 1, "w-full", "mt-2", "transition", "duration-100", "ease-in-out", "text-2xl", "dark:bg-gray-700", "dark:placeholder-gray-300", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange"], ["type", "button", 1, "w-full", "h-12", "transition", "duration-100", "ease-in-out", "font-semibold", "text-white", "bg-green-500", "hover:bg-green-700", "disabled:bg-green-500", "disabled:opacity-50", "focus:outline-none", 3, "click"], ["type", "button", 1, "w-full", "h-12", "transition", "duration-100", "ease-in-out", "font-semibold", "text-white", "bg-indigo-500", "hover:bg-indigo-700", "disabled:bg-indigo-500", "disabled:opacity-50", "focus:outline-none", 3, "ngClass", "disabled", "click"], ["type", "range", "name", "length", "min", "6", "max", "80", "step", "1", 1, "w-full", "mt-2", "overflow-hidden", "appearance-none", "rounded-full", "transition", "duration-100", "ease-in-out", "text-2xl", "dark:bg-gray-700", "dark:placeholder-gray-300", "border", "border-gray-300", "dark:border-gray-600", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "value", "ngModel", "ngModelChange", "change"], [1, "cursor-pointer", "inline-flex", "items-center", "dark:text-white"], ["type", "checkbox", 1, "form-checkbox", "cursor-pointer", "w-8", "h-8", "transition", "duration-100", "ease-in-out", "border-gray-300", "dark:border-gray-600", "dark:bg-gray-700", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", 3, "ngModel", "ngModelChange", "change"], [1, "ml-4"], [1, "cursor-pointer", "inline-flex", "items-center", "dark:text-white", 3, "ngClass"], ["type", "checkbox", 1, "form-checkbox", "cursor-pointer", "w-8", "h-8", "transition", "duration-100", "ease-in-out", "border-gray-300", "dark:border-gray-600", "dark:bg-gray-700", "dark:text-white", "focus:bg-gray-100", "hover:bg-gray-100", "dark:focus:bg-gray-600", "dark:hover:bg-gray-600", "focus:outline-none", "focus:ring", "focus:ring-offset-0", "focus:ring-indigo-500", "disabled:opacity-50", 3, "ngClass", "disabled", "ngModel", "ngModelChange", "change"]], template: function PasswordComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "label", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Generated password");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "input", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_6_listener($event) { return ctx.outputPassword = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PasswordComponent_Template_button_click_8_listener($event) { return ctx.generatePassword($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " Generate password ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "button", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PasswordComponent_Template_button_click_11_listener() { return ctx.copyPassword(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Copy password ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "label", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "input", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_17_listener($event) { return ctx.passwordLength = $event; })("change", function PasswordComponent_Template_input_change_17_listener($event) { return ctx.generatePassword($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "label", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "input", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_20_listener($event) { return ctx.uppercase = $event; })("change", function PasswordComponent_Template_input_change_20_listener() { return ctx.checkConditions(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "span", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Uppercase (A-Z)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "label", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "input", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_25_listener($event) { return ctx.lowercase = $event; })("change", function PasswordComponent_Template_input_change_25_listener() { return ctx.checkConditions(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "span", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Lowercase (a-z)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "label", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "input", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_30_listener($event) { return ctx.numbers = $event; })("change", function PasswordComponent_Template_input_change_30_listener() { return ctx.checkConditions(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "span", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Numbers (0-9)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "label", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "input", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function PasswordComponent_Template_input_ngModelChange_35_listener($event) { return ctx.special = $event; })("change", function PasswordComponent_Template_input_change_35_listener() { return ctx.checkConditions(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "span", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Special (!@#$%^&*)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngModel", ctx.inputText);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.wordModes);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](5, _c1, !ctx.inputText && ctx.inputText !== 0))("disabled", !ctx.inputText && ctx.inputText !== 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngModel", ctx.outputText);
-    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__.NumberValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_4__.NgClass, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.RadioControlValueAccessor], encapsulation: 2 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.outputPassword);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](13, _c0, !ctx.outputPassword || ctx.outputPassword.length === 0))("disabled", !ctx.outputPassword || ctx.outputPassword.length === 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Length: ", ctx.passwordLength, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("value", ctx.passwordLength);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.passwordLength);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.uppercase);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](15, _c0, !ctx.uppercase && ctx.lowercase && !ctx.numbers && !ctx.special));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](17, _c0, !ctx.uppercase && ctx.lowercase && !ctx.numbers && !ctx.special))("disabled", !ctx.uppercase && ctx.lowercase && !ctx.numbers && !ctx.special)("ngModel", ctx.lowercase);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.numbers);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.special);
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgModel, _angular_common__WEBPACK_IMPORTED_MODULE_2__.NgClass, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.RangeValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.CheckboxControlValueAccessor], encapsulation: 2 });
 
 
 /***/ }),
