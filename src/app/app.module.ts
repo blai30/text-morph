@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './components/shared';
 import { AboutModule } from './pages/about/about.module';
-import { NotFoundComponent } from './pages/not-found';
 import { WordCaseModule } from './pages/word-case/word-case.module';
 import { NumbersModule } from './pages/numbers/numbers.module';
 import { PasswordModule } from './pages/password/password.module';
@@ -37,7 +36,6 @@ import { environment } from '../environments/environment';
   ],
   declarations: [
     AppComponent,
-    NotFoundComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

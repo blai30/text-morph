@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SelectivePreloadingStrategyService } from './services';
-import { NotFoundComponent } from './pages/not-found';
 import { AboutComponent } from './pages/about';
 import { WordCaseComponent } from './pages/word-case';
 import { NumbersComponent } from './pages/numbers';
@@ -28,11 +27,6 @@ const routes: Routes = [
   {
     path: 'password',
     component: PasswordComponent,
-  },
-  // Must be last to catch all invalid routes.
-  {
-    path: '**',
-    component: NotFoundComponent,
   },
 ];
 
