@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1625700757443,
+  "timestamp": 1640557130380,
   "index": "/text-morph/index.html",
   "assetGroups": [
     {
@@ -59,17 +59,17 @@
     "/text-morph/assets/icons/icon-96x96.png": "c3fd5600645ddbafdf6bf32fd1a223b8ce376038",
     "/text-morph/assets/icons/icon.afdesign": "5f8efda9419cb388024b8ae0d7ecad8276584573",
     "/text-morph/assets/markdown/about.md": "6c2f241ba2f7d5b81d1e10f79cf83f1c496f41c7",
-    "/text-morph/bootstrap-icons.woff": "cbfb7021638656cd7c9159e830cebdf9db059dff",
-    "/text-morph/bootstrap-icons.woff2": "4649877868a0068ce50b105d0d2a235e8010c98f",
+    "/text-morph/bootstrap-icons.woff": "d644d61b4bc7925875ad953cc381b4a722b334d2",
+    "/text-morph/bootstrap-icons.woff2": "00150349e6ebdaf2628af9ea4e56d6b02dbda393",
     "/text-morph/favicon.ico": "ddeb2e1d0addc9a6fac17dc0bbe9d2b3283305ed",
     "/text-morph/index.html": "b7110edf9939033eba5eed63274af648490d93c9",
-    "/text-morph/main.js": "948813752c85f0bcb594029dfc6dfdba9bc9b133",
+    "/text-morph/main.js": "d86038a52a9d705d48931303bc1c204022ac98ec",
     "/text-morph/manifest.webmanifest": "78e8c7053d75f0a8b7398a69ad7e6946db4223a1",
-    "/text-morph/polyfills.js": "a29b4cf5700c804613a152a1516e831df00445a0",
-    "/text-morph/runtime.js": "9caea15fbc72c32e654b789a3b4c7eae83ad1a6a",
+    "/text-morph/polyfills.js": "155c7b6a825485b3c5e0d8d07baea28c45506a6f",
+    "/text-morph/runtime.js": "fd26490c0a8b0206ac337b7b36dac0c53b84aaf7",
     "/text-morph/scripts.js": "77990e28ee3fb00a6108da61bd90201300e6732a",
-    "/text-morph/styles.css": "16b8dca79a1165a6b09441b1b9be623c9c0e2720",
-    "/text-morph/vendor.js": "b8b5864aad07efd323758160ed4cf2ae47ccee91"
+    "/text-morph/styles.css": "717a9ae461966f38a9338c92e8dbbcbbf4caabb0",
+    "/text-morph/vendor.js": "06e4d635157c8881834fb9c0422e77797bb51fb4"
   },
   "navigationUrls": [
     {
